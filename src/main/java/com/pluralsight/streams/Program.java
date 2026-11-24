@@ -1,4 +1,6 @@
-package com.pluralsight;
+package com.pluralsight.streams;
+
+import com.pluralsight.Person;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -20,6 +22,7 @@ public class Program {
                 new Person("Robert", "Wilson", 16),
                 new Person("Amanda", "Taylor", 42)
         ));
+
 
 
 
