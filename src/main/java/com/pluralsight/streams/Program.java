@@ -2,9 +2,7 @@ package com.pluralsight.streams;
 
 import com.pluralsight.Person;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class Program {
 
@@ -23,6 +21,15 @@ public class Program {
                 new Person("Amanda", "Taylor", 42)
         ));
 
+        Collections.sort(people);
+
+//        for (Person person : people) {
+//            System.out.println(person.getLastName());
+//        }
+
+        people.stream()
+                .sorted(Comparator.comparingInt(Person::getAge).reversed())
+                .forEach(person -> System.out.println(person.getAge()));
 
 
 
